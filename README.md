@@ -1,5 +1,3 @@
-Batchfiles to troubleshoot internet connectivity.
-
 ## pingr
 A basic batchfile used to continuously ping Google's public DNS (8.8.8.8) to help detect hiccups in internet connectivity.
 
