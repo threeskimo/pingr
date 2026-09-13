@@ -1,6 +1,8 @@
 @echo off
+set TARGET=8.8.8.8
+if not "%~1"=="" set TARGET=%~1
 :a
-ping -n 1 8.8.8.8 | findstr TTL || goto disconnected
+ping -n 1 %TARGET% | findstr TTL || goto disconnected
 @timeout /t 1 /nobreak > nul
 goto a
 :disconnected
